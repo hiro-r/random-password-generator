@@ -1,0 +1,25 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Generate a <span class="title-highlight">random password</span></h1>
+            <p class="subtitle">Never use an insecure password again.</p>
+            <p class="password-text">
+                Please choose the prefered password's length in the box.
+                Or automatically generates 15 digits password. 
+            </p>
+            <input type="number" id="password-length" class="password-length-input" placeholder="choose length" max="20" onchange="exceededMax()" />
+            <br />
+            <p class="password-length-limit"><span class="asterisk">*</span> Length limit: 20</p>
+            <button onclick="createPassword()">Generate passwords</button>
+            <hr />
+            <p id="password-one" class="password-container" ></p>
+            <p id="password-two" class="password-container" ></p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
